@@ -42,7 +42,7 @@ box-sizing: border-box;
 }
 
 .icon-container .ingredient-strawberry path {
-    stroke: 10;
+    stroke-width: 10;
 }
 
 .icon-container .ingredient-mango {
@@ -50,7 +50,7 @@ box-sizing: border-box;
 }
 
 .icon-container .ingredient-mango path {
-    stroke: 10;
+    stroke-width: 10;
 }
 
 .icon-container .ingredient-pomegranate {
@@ -58,7 +58,7 @@ box-sizing: border-box;
 }
 
 .icon-container .ingredient-pomegranate path {
-    stroke: 10;
+    stroke-width: 10;
 }
 
 .icon-container .ingredient-grape {
@@ -66,7 +66,7 @@ box-sizing: border-box;
 }
 
 .icon-container .ingredient-grape path {
-    stroke: 10;
+    stroke-width: 10;
 }
 
 .icon-container .ingredient-pineapple {
@@ -74,7 +74,7 @@ box-sizing: border-box;
 }
 
 .icon-container .ingredient-pineapple path {
-    stroke: 10;
+    stroke-width: 10;
 }
 
 .icon-container .ingredient-lemon {
@@ -82,18 +82,36 @@ box-sizing: border-box;
 }
 
 .icon-container .ingredient-lemon path {
-    stroke: 10;
+    stroke-width: 10;
 }
 
-[class*="ingredient-"] {
-    display: block;
+.icon-container .ingredient-strawberry path {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
 }
-[class*="ingredient-"]:before {
-    content:'';
-    display: block;
-    width: 1em;
-    height: 1em;
-    background-repeat: no-repeat; 
-    background-size: contain; 
-    -webkit-background-size: contain;
+
+.icon-container .ingredient-strawberry:hover path {
+    animation: animate-strawberry 2s linear forwards
 }
+@keyframes animate-strawberry
+{ 
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 1560;
+    }
+    80%
+    {
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100%
+    {
+        stroke-dashoffset: 3120;
+        fill: #31e8ff;
+    }
+}
+
