@@ -4,12 +4,18 @@
 
 body { 
     font-family: 'Rowdies', sans-serif;
+    font-size: 24px;
+    background-color: #fff;
+    color: #06181f; 
     margin: 0;
     padding: 0;
 }
 
 p {
     font-family: 'Tinos', sans-serif;
+    font-size: 16px;
+    margin: 0; 
+    padding: 0; 
 }
 
 /* SVG Icons */ {
@@ -19,7 +25,26 @@ box-sizing: border-box;
 .icon-container {
     padding: 10px; 
     float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.icon-container div {
+    width: 50%;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.icon-container .ingredient-strawberry {
+    width: 200px; 
+}
+
+.icon-container .ingredient-strawberry path {
+    stroke: 10;
+}
+
 [class*="ingredient-"] {
     display: block;
 }
