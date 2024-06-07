@@ -125,7 +125,7 @@ box-sizing: border-box;
 }
 
 .icon-container .ingredient-mango:hover path {
-    animation: animate-strawberry 1s ease-in-out infinite
+    animation: animate-strawberry 1s linear forwards
 }
 @keyframes animate-mango
 { 
@@ -265,7 +265,7 @@ box-sizing: border-box;
     100%
     {
         stroke-dashoffset: 3120;
-        fill: #31e8ff;
+        fill: #32CD32;
     }
 }
 
