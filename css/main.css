@@ -125,7 +125,7 @@ box-sizing: border-box;
 }
 
 .icon-container .ingredient-mango:hover path {
-    animation: animate-strawberry 1s linear forwards
+    animation: animate-mango 1s linear forwards
 }
 @keyframes animate-mango
 { 
