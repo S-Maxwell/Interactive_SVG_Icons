@@ -45,6 +45,46 @@ box-sizing: border-box;
     stroke: 10;
 }
 
+.icon-container .ingredient-mango {
+    width: 200px; 
+}
+
+.icon-container .ingredient-mango path {
+    stroke: 10;
+}
+
+.icon-container .ingredient-pomegranate {
+    width: 200px; 
+}
+
+.icon-container .ingredient-pomegranate path {
+    stroke: 10;
+}
+
+.icon-container .ingredient-grape {
+    width: 200px; 
+}
+
+.icon-container .ingredient-grape path {
+    stroke: 10;
+}
+
+.icon-container .ingredient-pineapple {
+    width: 200px; 
+}
+
+.icon-container .ingredient-pineapple path {
+    stroke: 10;
+}
+
+.icon-container .ingredient-lemon {
+    width: 200px; 
+}
+
+.icon-container .ingredient-lemon path {
+    stroke: 10;
+}
+
 [class*="ingredient-"] {
     display: block;
 }
