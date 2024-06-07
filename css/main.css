@@ -37,6 +37,8 @@ box-sizing: border-box;
 
 }
 
+/* How I was able to space the icon */
+
 .icon-container .ingredient-strawberry {
     width: 200px; 
 }
@@ -90,8 +92,10 @@ box-sizing: border-box;
     stroke-dashoffset: 0;
 }
 
+/* This is how the animations take place */
+
 .icon-container .ingredient-strawberry:hover path {
-    animation: animate-strawberry 2s linear forwards
+    animation: animate-strawberry 1s linear forwards
 }
 @keyframes animate-strawberry
 { 
@@ -114,4 +118,163 @@ box-sizing: border-box;
         fill: #31e8ff;
     }
 }
+
+.icon-container .ingredient-mango path {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+}
+
+.icon-container .ingredient-mango:hover path {
+    animation: animate-strawberry 1s ease-in-out infinite
+}
+@keyframes animate-mango
+{ 
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 1560;
+    }
+    80%
+    {
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100%
+    {
+        stroke-dashoffset: 3120;
+        fill: #ecb80c;
+    }
+}
+
+.icon-container .ingredient-pomegranate path {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+}
+
+.icon-container .ingredient-pomegranate:hover path {
+    animation: animate-pomegranate 1s linear forwards
+}
+@keyframes animate-pomegranate
+{ 
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 1560;
+    }
+    80%
+    {
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100%
+    {
+        stroke-dashoffset: 3120;
+        fill: #0d76f5;
+    }
+}
+
+.icon-container .ingredient-grape path {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+}
+
+.icon-container .ingredient-grape:hover path {
+    animation: animate-grape 1s linear forwards
+}
+@keyframes animate-grape
+{ 
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 1560;
+    }
+    80%
+    {
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100%
+    {
+        stroke-dashoffset: 3120;
+        fill: #fff;
+    }
+}
+
+.icon-container .ingredient-pineapple path {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+}
+
+.icon-container .ingredient-pineapple:hover path {
+    animation: animate-pineapple 1s linear forwards
+}
+@keyframes animate-pineapple
+{ 
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 1560;
+    }
+    80%
+    {
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100%
+    {
+        stroke-dashoffset: 3120;
+        fill: #F4FAFC00;
+    }
+}
+
+.icon-container .ingredient-lemon path {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+}
+
+.icon-container .ingredient-lemon:hover path {
+    animation: animate-lemon 1s linear forwards
+}
+@keyframes animate-lemon
+{ 
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 1560;
+    }
+    80%
+    {
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100%
+    {
+        stroke-dashoffset: 3120;
+        fill: #31e8ff;
+    }
+}
+
+
+
+
+
+
+
+
+
 
